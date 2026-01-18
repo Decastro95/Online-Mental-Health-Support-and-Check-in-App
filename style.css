@@ -1,0 +1,68 @@
+/* Calming, emotionally supportive theme */
+}
+
+
+@media (max-width: 420px) {
+.moods button {
+width: 48px;
+height: 48px;
+}
+}
+```css
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #6fb1b7, #b39ddb);
+margin: 0;
+padding: 0;
+}
+
+
+.app {
+max-width: 420px;
+margin: 40px auto;
+background: #ffffffdd;
+padding: 20px;
+border-radius: 16px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+text-align: center;
+}
+
+
+.subtitle {
+color: #555;
+}
+
+
+.moods button {
+font-size: 24px;
+margin: 6px;
+padding: 10px;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+}
+
+
+textarea {
+width: 100%;
+height: 80px;
+margin-top: 15px;
+border-radius: 8px;
+border: 1px solid #ccc;
+padding: 10px;
+}
+
+
+.tip {
+margin-top: 15px;
+background: #f3e5f5;
+padding: 10px;
+border-radius: 8px;
+}
+
+
+.emergency {
+margin-top: 20px;
+font-size: 14px;
+color: #b00020;
+}
