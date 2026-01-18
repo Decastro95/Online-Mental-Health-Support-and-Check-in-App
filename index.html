@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mental Health Check‑In</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mental Health Check-In</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
 </head>
 <body>
-<div class="app">
-<h1>🌱 Mental Health Check‑In</h1>
-<p class="subtitle">How are you feeling today?</p>
 
+  <div class="app">
+    <h1>🌱 Mental Health Check-In</h1>
+    <p class="subtitle">How are you feeling today?</p>
 
-<div class="moods">
-<button>😊</button>
-<button>😐</button>
-<button>😔</button>
-<button>😡</button>
-<button>😴</button>
-</div>
+    <!-- Mood selection -->
+    <div class="moods">
+      <button data-mood="0">😊</button>
+      <button data-mood="1">😐</button>
+      <button data-mood="2">😔</button>
+      <button data-mood="3">😡</button>
+      <button data-mood="4">😴</button>
+    </div>
 
+    <!-- Reflection -->
+    <textarea placeholder="Optional: write a few thoughts..."></textarea>
 
-<textarea placeholder="Optional: Write a few thoughts..."></textarea>
+    <!-- Tip -->
+    <div class="tip" id="tip"></div>
 
+    <!-- History + chart -->
+    <div class="history">
+      <h3>Your last 7 days</h3>
+      <div id="timeline"></div>
+      <canvas id="moodChart" height="160"></canvas>
+    </div>
 
-<div class="tip" id="tip"></div>
+    <!-- Emergency -->
+    <button class="panic">I’m not okay</button>
 
+    <div class="emergency">
+      <strong>Urgent support:</strong><br />
+      Call <b>10111</b> or visit the nearest health facility.
+    </div>
+  </div>
 
-<div class="emergency">
-<strong>Need urgent help?</strong><br />
-Call <b>10111</b> or visit your nearest health facility.
-</div>
-</div>
+  <button class="dark-toggle">🌙</button>
 
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
